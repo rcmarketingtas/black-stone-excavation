@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 type LogoSize = "sm" | "md" | "lg";
 
 const sizeClasses: Record<LogoSize, string> = {
-  sm: "h-8 w-auto md:h-9",
-  md: "h-10 w-auto md:h-12",
-  lg: "h-14 w-auto md:h-16",
+  sm: "h-8 max-w-[10rem] md:h-9 md:max-w-[11rem]",
+  md: "h-10 max-w-[12.5rem] md:h-11 md:max-w-[14rem]",
+  lg: "h-12 max-w-[15rem] md:h-14 md:max-w-[17.5rem]",
 };
 
 interface LogoProps {
@@ -15,14 +15,14 @@ interface LogoProps {
 
 export function Logo({ size = "md", className }: LogoProps) {
   return (
-    <picture className={cn("inline-block shrink-0", className)}>
-      <source srcSet="/logo.webp" type="image/webp" />
+    <picture className={cn("inline-flex shrink-0 items-center", className)}>
+      <source srcSet="/logo-nav.webp" type="image/webp" />
       <img
-        src="/logo.png"
+        src="/logo-nav.png"
         alt="Blackstone Excavations"
-        width={6633}
-        height={1219}
-        className={cn("w-auto object-contain", sizeClasses[size])}
+        width={602}
+        height={122}
+        className={cn("h-auto w-auto max-w-full object-contain object-left", sizeClasses[size])}
         decoding="async"
       />
     </picture>

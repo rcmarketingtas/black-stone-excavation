@@ -18,7 +18,6 @@ export const MAPS_EMBED_URL =
 export const NAV_LINKS = [
   { label: "Home", href: "home" },
   { label: "Services", href: "services" },
-  { label: "Gallery", href: "gallery" },
   { label: "About", href: "about" },
   { label: "Contact", href: "contact" },
 ] as const;
@@ -28,41 +27,49 @@ export const SERVICES = [
     title: "Site Cuts",
     description: "Precision benching and cut-and-fill for residential and commercial blocks.",
     icon: "Layers",
+    image: "/services/site-cuts.webp",
   },
   {
     title: "Earthmoving",
     description: "Bulk earthworks, soil relocation, and site preparation.",
     icon: "Mountain",
+    image: "/services/earthmoving.webp",
   },
   {
     title: "General Excavation",
     description: "Foundations, pools, sheds, and landscaping excavation.",
     icon: "Shovel",
+    image: "/services/general-excavation.webp",
   },
   {
     title: "Rock Removal",
     description: "Rock breaking, hammer work, and removal for tough terrain.",
     icon: "Pickaxe",
+    image: "/services/rock-removal.webp",
   },
   {
     title: "Trenching",
     description: "Utility trenches for plumbing, electrical, and telecom.",
     icon: "Route",
+    image: "/services/trenching.webp",
   },
   {
     title: "Drainage",
     description: "Stormwater and property drainage solutions.",
     icon: "Droplets",
+    image: "/services/drainage.webp",
   },
   {
     title: "Land Clearing",
     description: "Vegetation removal and site preparation.",
     icon: "Trees",
+    image: "/services/land-clearing.webp",
   },
   {
     title: "Driveway Preparation",
     description: "Grading and base prep for durable driveways.",
     icon: "Car",
+    image: "/services/driveway-preparation.webp",
   },
 ] as const;
 
@@ -71,64 +78,6 @@ export const WHY_CHOOSE_US = [
   { label: "Projects Completed", value: 500, suffix: "+", animate: true },
   { label: "Fully Insured", value: 0, suffix: "", animate: false },
   { label: "Licensed Operators", value: 0, suffix: "", animate: false },
-] as const;
-
-export type GalleryCategory =
-  | "All"
-  | "Excavation"
-  | "Earthmoving"
-  | "Trenching"
-  | "Rock Removal"
-  | "Site Cuts"
-  | "Machinery";
-
-export const GALLERY_CATEGORIES: GalleryCategory[] = [
-  "All",
-  "Excavation",
-  "Earthmoving",
-  "Trenching",
-  "Rock Removal",
-  "Site Cuts",
-  "Machinery",
-];
-
-export const GALLERY_IMAGES = [
-  {
-    src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
-    alt: "Excavator working on residential site",
-    category: "Excavation" as GalleryCategory,
-    height: 320,
-  },
-  {
-    src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80",
-    alt: "Large excavator at construction site",
-    category: "Machinery" as GalleryCategory,
-    height: 400,
-  },
-  {
-    src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80",
-    alt: "Compact excavator trenching",
-    category: "Trenching" as GalleryCategory,
-    height: 280,
-  },
-  {
-    src: "https://images.unsplash.com/photo-1590856029826-c4a54a5a0492?w=900&q=80",
-    alt: "Skid steer grading driveway",
-    category: "Earthmoving" as GalleryCategory,
-    height: 360,
-  },
-  {
-    src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80",
-    alt: "Site cut preparation",
-    category: "Site Cuts" as GalleryCategory,
-    height: 300,
-  },
-  {
-    src: "https://images.unsplash.com/photo-1577495508048-b5900514ad67?w=900&q=80",
-    alt: "Rock removal with hammer",
-    category: "Rock Removal" as GalleryCategory,
-    height: 340,
-  },
 ] as const;
 
 export const SERVICE_AREAS = [
