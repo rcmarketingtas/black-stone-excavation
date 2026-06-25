@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.webp",
-        width: 6633,
-        height: 1219,
-        alt: "Blackstone Excavations",
+        url: "/hero-excavation.webp",
+        width: 1536,
+        height: 1024,
+        alt: "Excavator at sunrise on construction site — Blackstone Excavations",
       },
     ],
   },
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE.name} | Premium Excavation Melbourne`,
     description: SITE.description,
-    images: ["/logo.webp"],
+    images: ["/hero-excavation.webp"],
   },
   robots: {
     index: true,
