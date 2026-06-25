@@ -12,8 +12,8 @@ export function Footer() {
           <div>
             <Logo size="md" />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Premium excavation and earthmoving services across Melbourne and
-              regional Victoria. Licensed, insured, and built on reliability.
+              Professional excavation and earthmoving across Launceston and Tasmania.
+              Licensed, insured, and built on reliability.
             </p>
             <div className="mt-6 flex gap-3">
               {[
@@ -77,10 +77,10 @@ export function Footer() {
               <li>
                 <a
                   href={SITE.phoneHref}
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary"
+                  className="flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
                 >
-                  <Phone className="h-4 w-4 shrink-0 text-primary" />
-                  {SITE.phone}
+                  <Phone className="h-4 w-4 shrink-0" />
+                  Call {SITE.phone}
                 </a>
               </li>
               <li>

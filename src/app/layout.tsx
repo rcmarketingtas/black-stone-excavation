@@ -28,15 +28,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: `${SITE.name} | Premium Excavation & Earthmoving Melbourne`,
+  title: `${SITE.name} | Excavation & Earthmoving Launceston`,
   description: SITE.description,
   keywords: [
-    "excavation Melbourne",
-    "earthmoving Victoria",
+    "excavation Launceston",
+    "earthmoving Tasmania",
     "site cuts",
     "trenching",
     "rock removal",
-    "civil works",
     "Blackstone Excavations",
   ],
   authors: [{ name: SITE.name }],
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} | Premium Excavation Melbourne`,
+    title: `${SITE.name} | Excavation Launceston Tasmania`,
     description: SITE.description,
     images: ["/hero-excavation.webp"],
   },
@@ -78,17 +77,16 @@ const jsonLd = {
   email: SITE.email,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Melbourne",
-    addressRegion: "VIC",
+    addressLocality: "Launceston",
+    addressRegion: "TAS",
     addressCountry: "AU",
   },
   areaServed: [
-    "Melbourne",
-    "Mornington Peninsula",
-    "Geelong",
-    "Yarra Valley",
-    "Macedon Ranges",
-    "Ballarat",
+    "Launceston",
+    "Northern Tasmania",
+    "Tamar Valley",
+    "North West Coast",
+    "Tasmania",
   ],
   priceRange: "$$",
   openingHours: ["Mo-Fr 06:00-18:00", "Sa 07:00-14:00"],

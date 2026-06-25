@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SERVICE_OPTIONS, SERVICE_AREAS, SITE } from "@/lib/data";
+import { MAPS_EMBED_URL, SERVICE_OPTIONS, SERVICE_AREAS, SITE } from "@/lib/data";
 import { contactFormSchema, type ContactFormData } from "@/lib/validations";
 
 type FormState = "idle" | "loading" | "success" | "error";
@@ -92,9 +92,18 @@ export function Contact() {
       <div className="container-wide mx-auto">
         <SectionHeading
           eyebrow="Get In Touch"
-          title="Request Your Free Quote"
-          description="Fill out the form below and we'll get back to you within 24 hours with next steps."
+          title="Contact Us"
+          description="Call us for the fastest response, or send your project details below and we'll get back to you within 24 hours."
         />
+
+        <div className="mb-8 flex justify-center lg:justify-start">
+          <Button size="lg" className="btn-glow w-full sm:w-auto" asChild>
+            <a href={SITE.phoneHref} className="flex items-center justify-center gap-2">
+              <Phone className="h-5 w-5" />
+              Call Now — {SITE.phone}
+            </a>
+          </Button>
+        </div>
 
         <div className="grid gap-10 lg:grid-cols-5">
           <motion.form
@@ -157,7 +166,7 @@ export function Contact() {
                 value={form.projectAddress}
                 onChange={(e) => updateField("projectAddress", e.target.value)}
                 aria-invalid={!!errors.projectAddress}
-                placeholder="123 Example St, Suburb VIC 3000"
+                placeholder="123 Example St, Launceston TAS 7250"
               />
               {errors.projectAddress && (
                 <p className="text-xs text-red-400">{errors.projectAddress}</p>
@@ -248,7 +257,7 @@ export function Contact() {
                   Sending...
                 </>
               ) : (
-                "Submit Enquiry"
+                "Send Enquiry"
               )}
             </Button>
           </motion.form>
@@ -309,7 +318,7 @@ export function Contact() {
             <div className="overflow-hidden rounded-2xl border border-border">
               <iframe
                 title="Blackstone Excavations location"
-                src="https://maps.google.com/maps?q=Melbourne+Victoria+Australia&output=embed"
+                src={MAPS_EMBED_URL}
                 className="aspect-video w-full border-0 grayscale contrast-125"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

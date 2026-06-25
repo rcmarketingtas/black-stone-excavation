@@ -30,7 +30,7 @@ export function Reviews() {
         <SectionHeading
           eyebrow="Testimonials"
           title="What Our Clients Say"
-          description="Don't just take our word for it — hear from homeowners and builders across Victoria."
+          description="Trusted by homeowners and builders across Tasmania."
         />
 
         <div className="relative mx-auto max-w-3xl">

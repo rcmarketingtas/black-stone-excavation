@@ -6,11 +6,10 @@ import Image from "next/image";
 import { ABOUT_IMAGE } from "@/lib/data";
 
 const highlights = [
-  "Family-owned with 10+ years in the industry",
-  "Modern, well-maintained fleet",
+  "10+ years experience",
   "Fully insured and OH&S compliant",
-  "Transparent pricing — no hidden fees",
-  "Residential, commercial & civil projects",
+  "Licensed operators",
+  "Residential and commercial projects",
 ];
 
 export function About() {
@@ -34,11 +33,6 @@ export function About() {
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-            <div className="absolute bottom-6 left-6 rounded-lg bg-black/60 px-4 py-2 backdrop-blur">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-                Our Fleet
-              </span>
-            </div>
           </motion.div>
 
           <motion.div
@@ -54,16 +48,13 @@ export function About() {
               Built on Reliability.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Blackstone Excavations was founded on a simple promise: show up on time,
-              do the job right, and leave every site better than we found it. What started
-              as a single excavator operation has grown into a trusted name across
-              Melbourne and regional Victoria.
+              Blackstone Excavations delivers dependable excavation and earthmoving
+              across Launceston and Tasmania. We show up on time, do the job right,
+              and leave every site clean and ready for the next stage.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Our team of licensed operators brings decades of combined experience to
-              every project — whether it&apos;s a backyard pool dig, a challenging rock
-              removal, or a full subdivision earthworks package. We invest in modern
-              equipment because your project deserves machinery that performs.
+              From backyard digs to challenging rock removal, our licensed operators
+              bring modern equipment and attention to detail to every project.
             </p>
 
             <ul className="mt-8 space-y-3">

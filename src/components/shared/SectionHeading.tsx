@@ -6,7 +6,7 @@ import { useInView } from "@/hooks/use-in-view";
 interface SectionHeadingProps {
   eyebrow?: string;
   title: string;
-  description?: string;
+  description?: React.ReactNode;
   align?: "left" | "center";
 }
 

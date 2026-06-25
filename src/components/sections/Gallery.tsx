@@ -54,7 +54,7 @@ export function Gallery() {
         <SectionHeading
           eyebrow="Our Work"
           title="Project Gallery"
-          description="Browse our recent excavation, earthmoving, and civil works projects across Victoria."
+          description="Recent excavation and earthmoving projects across Tasmania."
         />
 
         <div className="mb-10 flex flex-wrap justify-center gap-2">

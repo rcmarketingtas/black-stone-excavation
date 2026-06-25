@@ -59,15 +59,11 @@ export function Navigation() {
         </ul>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a
-            href={SITE.phoneHref}
-            className="flex items-center gap-2 text-sm font-semibold text-white hover:text-primary"
-          >
-            <Phone className="h-4 w-4 text-primary" />
-            {SITE.phone}
-          </a>
-          <Button onClick={() => handleNavClick("contact")} size="sm">
-            Free Quote
+          <Button size="sm" asChild>
+            <a href={SITE.phoneHref} className="flex items-center gap-2">
+              <Phone className="h-4 w-4" />
+              Call Now
+            </a>
           </Button>
         </div>
 
@@ -100,21 +96,12 @@ export function Navigation() {
                   </button>
                 </li>
               ))}
-              <li className="mt-2 border-t border-border pt-4">
-                <a
-                  href={SITE.phoneHref}
-                  className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-primary"
-                >
-                  <Phone className="h-4 w-4" />
-                  {SITE.phone}
-                </a>
-              </li>
-              <li className="px-4 pt-2">
-                <Button
-                  className="w-full"
-                  onClick={() => handleNavClick("contact")}
-                >
-                  Request Free Quote
+              <li className="mt-2 border-t border-border px-4 pt-4">
+                <Button className="w-full" asChild>
+                  <a href={SITE.phoneHref} className="flex items-center justify-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    Call Now — {SITE.phone}
+                  </a>
                 </Button>
               </li>
             </ul>

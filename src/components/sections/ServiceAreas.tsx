@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SERVICE_AREAS } from "@/lib/data";
+import { MAPS_EMBED_URL, SERVICE_AREAS } from "@/lib/data";
 
 export function ServiceAreas() {
   return (
@@ -13,7 +13,7 @@ export function ServiceAreas() {
         <SectionHeading
           eyebrow="Where We Work"
           title="Service Areas"
-          description="Serving Melbourne metro and regional Victoria — contact us to confirm coverage for your location."
+          description="Based in Launceston — servicing Northern Tasmania and statewide by arrangement."
         />
 
         <div className="grid gap-6 lg:grid-cols-2">
@@ -46,7 +46,7 @@ export function ServiceAreas() {
             <div className="relative aspect-[4/3] bg-muted lg:aspect-auto lg:h-full lg:min-h-[400px]">
               <iframe
                 title="Blackstone Excavations service area map"
-                src="https://maps.google.com/maps?q=Melbourne+Victoria+Australia&output=embed"
+                src={MAPS_EMBED_URL}
                 className="absolute inset-0 h-full w-full border-0 grayscale contrast-125"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

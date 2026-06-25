@@ -1,24 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Phone } from "lucide-react";
 import {
-  BrickWall,
   Car,
-  CircleDot,
   Droplets,
-  HardHat,
   Layers,
   Mountain,
   Pickaxe,
   Route,
   Shovel,
-  Sparkles,
   Trees,
   type LucideIcon,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SERVICES } from "@/lib/data";
+import { SERVICES, SITE } from "@/lib/data";
 
 const iconMap: Record<string, LucideIcon> = {
   Layers,
@@ -29,10 +26,6 @@ const iconMap: Record<string, LucideIcon> = {
   Droplets,
   Trees,
   Car,
-  BrickWall,
-  CircleDot,
-  Sparkles,
-  HardHat,
 };
 
 export function Services() {
@@ -41,11 +34,22 @@ export function Services() {
       <div className="container-wide mx-auto">
         <SectionHeading
           eyebrow="What We Do"
-          title="Complete Excavation Services"
-          description="From tight-access residential jobs to large-scale civil earthworks — we have the equipment and expertise to deliver."
+          title="Excavation Services"
+          description={
+            <>
+              Site cuts, earthmoving, trenching, and more across Launceston and Tasmania.{" "}
+              <a
+                href={SITE.phoneHref}
+                className="inline-flex items-center gap-1 font-semibold text-primary hover:underline"
+              >
+                <Phone className="h-4 w-4" />
+                Call {SITE.phone}
+              </a>
+            </>
+          }
         />
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((service, index) => {
             const Icon = iconMap[service.icon] ?? Shovel;
             return (

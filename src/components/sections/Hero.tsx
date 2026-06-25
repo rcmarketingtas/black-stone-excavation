@@ -49,7 +49,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-4 inline-block text-sm font-semibold uppercase tracking-[0.25em] text-primary"
         >
-          Melbourne & Regional Victoria
+          Launceston & Tasmania
         </motion.span>
 
         <motion.h1
@@ -71,24 +71,20 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg"
         >
-          From residential site cuts to commercial civil works — Blackstone Excavations delivers
-          precision excavation with modern machinery, licensed operators, and
-          uncompromising safety standards.
+          Professional excavation and earthmoving across Launceston and Tasmania —
+          licensed operators, modern machinery, and reliable results.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+          className="mt-10 flex flex-col items-center justify-center"
         >
-          <Button size="lg" onClick={() => scrollToSection("contact")}>
-            Request a Free Quote
-          </Button>
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" className="btn-glow min-w-[200px]" asChild>
             <a href={SITE.phoneHref} className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              Call Now
+              <Phone className="h-5 w-5" />
+              Call Now — {SITE.phone}
             </a>
           </Button>
         </motion.div>

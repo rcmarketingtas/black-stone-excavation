@@ -1,13 +1,13 @@
 "use client";
 
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { Shield, Award, Wrench, Clock, FileText, Users } from "lucide-react";
+import { Shield, Award, Wrench, Users } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { WHY_CHOOSE_US } from "@/lib/data";
 import { useInView } from "@/hooks/use-in-view";
 
-const statIcons = [Award, Wrench, Shield, Clock, FileText, Users, Users];
+const statIcons = [Award, Wrench, Shield, Users];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
   const count = useMotionValue(0);
@@ -43,11 +43,11 @@ export function WhyChooseUs() {
       <div className="container-wide mx-auto">
         <SectionHeading
           eyebrow="Why Blackstone"
-          title="The Standard Others Measure Against"
-          description="We don't cut corners — on safety, quality, or communication."
+          title="Why Choose Us"
+          description="Licensed, insured, and ready when you need us."
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {WHY_CHOOSE_US.map((stat, index) => {
             const Icon = statIcons[index] ?? Award;
             return (
