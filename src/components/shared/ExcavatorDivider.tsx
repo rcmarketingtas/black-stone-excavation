@@ -8,7 +8,7 @@ export function ExcavatorDivider() {
       <div className="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
       <motion.svg
         viewBox="0 0 120 40"
-        className="relative z-10 h-10 w-32 text-primary"
+        className="relative z-10 h-10 w-32 text-accent"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}

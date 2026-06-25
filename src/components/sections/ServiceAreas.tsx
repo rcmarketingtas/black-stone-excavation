@@ -45,7 +45,7 @@ export function ServiceAreas() {
           >
             <div className="relative aspect-[4/3] bg-muted lg:aspect-auto lg:h-full lg:min-h-[400px]">
               <iframe
-                title="Black Stone Excavation service area map"
+                title="Blackstone Excavations service area map"
                 src="https://maps.google.com/maps?q=Melbourne+Victoria+Australia&output=embed"
                 className="absolute inset-0 h-full w-full border-0 grayscale contrast-125"
                 loading="lazy"

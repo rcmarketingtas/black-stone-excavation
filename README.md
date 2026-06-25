@@ -1,6 +1,6 @@
-# Black Stone Excavation
+# Blackstone Excavations
 
-Premium one-page website for **Black Stone Excavation** — a professional excavation and earthmoving business serving Melbourne and regional Victoria.
+Premium one-page website for **Blackstone Excavations** — a professional excavation and earthmoving business serving Melbourne and regional Victoria.
 
 Built with Next.js 15, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion, and Lucide Icons.
 
@@ -109,4 +109,4 @@ Deploy to [Vercel](https://vercel.com) or any Node.js host. Add environment vari
 
 ## License
 
-Private — Black Stone Excavation.
+Private — Blackstone Excavations.

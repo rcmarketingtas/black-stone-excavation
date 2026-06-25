@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Logo } from "@/components/shared/Logo";
 import { NAV_LINKS, SERVICES, SITE } from "@/lib/data";
 
 export function Footer() {
@@ -9,12 +10,7 @@ export function Footer() {
       <div className="container-wide section-padding mx-auto !py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="font-display text-xl font-bold tracking-[0.15em] text-white">
-              BLACK STONE
-            </div>
-            <div className="text-xs uppercase tracking-[0.35em] text-primary">
-              Excavation
-            </div>
+            <Logo size="md" />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Premium excavation and earthmoving services across Melbourne and
               regional Victoria. Licensed, insured, and built on reliability.

@@ -71,7 +71,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg"
         >
-          From residential site cuts to commercial civil works — Black Stone delivers
+          From residential site cuts to commercial civil works — Blackstone Excavations delivers
           precision excavation with modern machinery, licensed operators, and
           uncompromising safety standards.
         </motion.p>

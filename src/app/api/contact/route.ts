@@ -34,12 +34,12 @@ export async function POST(request: Request) {
     const resend = new Resend(apiKey);
 
     const { error } = await resend.emails.send({
-      from: `Black Stone Excavation <${fromEmail}>`,
+      from: `Blackstone Excavations <${fromEmail}>`,
       to: [toEmail],
       replyTo: data.email,
       subject: `New Enquiry: ${data.serviceRequired} — ${data.fullName}`,
       html: `
-        <h2>New Enquiry from Black Stone Website</h2>
+        <h2>New Enquiry from Blackstone Excavations Website</h2>
         <table style="border-collapse:collapse;width:100%;max-width:600px;">
           <tr><td style="padding:8px;font-weight:bold;">Name</td><td style="padding:8px;">${data.fullName}</td></tr>
           <tr><td style="padding:8px;font-weight:bold;">Phone</td><td style="padding:8px;">${data.phone}</td></tr>

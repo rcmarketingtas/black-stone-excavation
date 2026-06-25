@@ -42,7 +42,7 @@ export function WhyChooseUs() {
     <section className="section-padding relative bg-card">
       <div className="container-wide mx-auto">
         <SectionHeading
-          eyebrow="Why Black Stone"
+          eyebrow="Why Blackstone"
           title="The Standard Others Measure Against"
           description="We don't cut corners — on safety, quality, or communication."
         />

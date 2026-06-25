@@ -28,7 +28,7 @@ export function About() {
           >
             <Image
               src={ABOUT_IMAGE}
-              alt="Black Stone Excavation machinery on site"
+              alt="Blackstone Excavations machinery on site"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -54,7 +54,7 @@ export function About() {
               Built on Reliability.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Black Stone Excavation was founded on a simple promise: show up on time,
+              Blackstone Excavations was founded on a simple promise: show up on time,
               do the job right, and leave every site better than we found it. What started
               as a single excavator operation has grown into a trusted name across
               Melbourne and regional Victoria.

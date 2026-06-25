@@ -83,7 +83,7 @@ export function BeforeAfter() {
             </div>
 
             <div
-              className="absolute top-0 bottom-0 z-10 w-1 bg-primary shadow-[0_0_20px_rgba(217,119,6,0.6)]"
+              className="absolute top-0 bottom-0 z-10 w-1 bg-white shadow-[0_0_20px_rgba(255,255,255,0.35)]"
               style={{ left: `${sliderPosition}%`, transform: "translateX(-50%)" }}
             >
               <div className="absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-primary bg-background shadow-lg">
@@ -97,7 +97,7 @@ export function BeforeAfter() {
             <span className="absolute top-4 left-4 rounded bg-black/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur">
               Before
             </span>
-            <span className="absolute top-4 right-4 rounded bg-primary/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
+            <span className="absolute top-4 right-4 rounded bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-background">
               After
             </span>
           </div>

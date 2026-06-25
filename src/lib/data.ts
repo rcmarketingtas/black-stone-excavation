@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Black Stone Excavation",
+  name: "Blackstone Excavations",
   tagline: "Precision Excavation. Built on Strength.",
   description:
     "Premium excavation, earthmoving, and civil works across Melbourne and regional Victoria. Licensed operators, modern fleet, free quotes.",
@@ -262,7 +262,7 @@ export const REVIEWS = [
     name: "James Mitchell",
     location: "Mornington, VIC",
     rating: 5,
-    text: "Black Stone completed our site cut and driveway prep ahead of schedule. Professional crew, spotless finish, and communication was excellent throughout.",
+    text: "Blackstone Excavations completed our site cut and driveway prep ahead of schedule. Professional crew, spotless finish, and communication was excellent throughout.",
   },
   {
     name: "Sarah Chen",

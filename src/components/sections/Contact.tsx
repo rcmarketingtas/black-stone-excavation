@@ -308,7 +308,7 @@ export function Contact() {
 
             <div className="overflow-hidden rounded-2xl border border-border">
               <iframe
-                title="Black Stone Excavation location"
+                title="Blackstone Excavations location"
                 src="https://maps.google.com/maps?q=Melbourne+Victoria+Australia&output=embed"
                 className="aspect-video w-full border-0 grayscale contrast-125"
                 loading="lazy"

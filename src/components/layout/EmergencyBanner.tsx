@@ -10,7 +10,7 @@ export function EmergencyBanner() {
   if (!visible) return null;
 
   return (
-    <div className="relative z-[60] bg-primary px-4 py-2.5 text-primary-foreground">
+    <div className="relative z-[60] bg-accent px-4 py-2.5 text-accent-foreground">
       <div className="container-wide mx-auto flex items-center justify-center gap-3 text-sm">
         <AlertTriangle className="h-4 w-4 shrink-0" aria-hidden="true" />
         <p className="text-center">
@@ -40,7 +40,7 @@ export function FloatingCallButton() {
   return (
     <a
       href={SITE.phoneHref}
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg btn-glow md:hidden"
+      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg btn-glow md:hidden"
       aria-label={`Call ${SITE.phone}`}
     >
       <Phone className="h-6 w-6" />

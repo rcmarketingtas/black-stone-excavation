@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
+import { Inter, Oswald, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { EmergencyBanner, FloatingCallButton } from "@/components/layout/EmergencyBanner";
@@ -20,6 +20,13 @@ const oswald = Oswald({
   display: "swap",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["700"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: `${SITE.name} | Premium Excavation & Earthmoving Melbourne`,
   description: SITE.description,
@@ -30,7 +37,7 @@ export const metadata: Metadata = {
     "trenching",
     "rock removal",
     "civil works",
-    "Black Stone Excavation",
+    "Blackstone Excavations",
   ],
   authors: [{ name: SITE.name }],
   openGraph: {
@@ -42,10 +49,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
-        width: 1200,
-        height: 630,
-        alt: "Black Stone Excavation — professional excavation services",
+        url: "/logo.svg",
+        width: 320,
+        height: 88,
+        alt: "Blackstone Excavations — professional excavation services",
       },
     ],
   },
@@ -53,9 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE.name} | Premium Excavation Melbourne`,
     description: SITE.description,
-    images: [
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
-    ],
+    images: ["/logo.svg"],
   },
   robots: {
     index: true,
@@ -87,7 +92,8 @@ const jsonLd = {
   ],
   priceRange: "$$",
   openingHours: ["Mo-Fr 06:00-18:00", "Sa 07:00-14:00"],
-  image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+  image: `${SITE.url}/logo.svg`,
+  logo: `${SITE.url}/logo.svg`,
   sameAs: [],
 };
 
@@ -105,7 +111,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${oswald.variable} min-h-screen bg-background font-sans antialiased`}
+        className={`${inter.variable} ${oswald.variable} ${playfair.variable} min-h-screen bg-background font-sans antialiased`}
       >
         <PageLoader />
         <EmergencyBanner />
