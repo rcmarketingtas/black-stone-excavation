@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.svg",
-        width: 320,
-        height: 88,
-        alt: "Blackstone Excavations — professional excavation services",
+        url: "/logo.webp",
+        width: 6633,
+        height: 1219,
+        alt: "Blackstone Excavations",
       },
     ],
   },
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE.name} | Premium Excavation Melbourne`,
     description: SITE.description,
-    images: ["/logo.svg"],
+    images: ["/logo.webp"],
   },
   robots: {
     index: true,
@@ -92,8 +92,8 @@ const jsonLd = {
   ],
   priceRange: "$$",
   openingHours: ["Mo-Fr 06:00-18:00", "Sa 07:00-14:00"],
-  image: `${SITE.url}/logo.svg`,
-  logo: `${SITE.url}/logo.svg`,
+  image: `${SITE.url}/logo.webp`,
+  logo: `${SITE.url}/logo.webp`,
   sameAs: [],
 };
 

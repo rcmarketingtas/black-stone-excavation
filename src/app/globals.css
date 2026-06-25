@@ -11,7 +11,7 @@
   --color-secondary-foreground: #ffffff;
   --color-muted: #262626;
   --color-muted-foreground: #a3a3a3;
-  --color-accent: #d97706;
+  --color-accent: #facc15;
   --color-accent-foreground: #0b0b0b;
   --color-border: #2a2a2a;
   --color-input: #2a2a2a;
@@ -92,12 +92,12 @@ body {
 }
 
 .btn-glow {
-  box-shadow: 0 0 20px rgba(217, 119, 6, 0.25);
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .btn-glow:hover {
-  box-shadow: 0 0 28px rgba(217, 119, 6, 0.4);
+  box-shadow: 0 0 28px rgba(250, 204, 21, 0.4);
   transform: translateY(-1px);
 }
 

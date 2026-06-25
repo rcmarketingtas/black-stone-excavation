@@ -6,10 +6,10 @@
     </filter>
   </defs>
   <!-- Gold excavator icon above the O -->
-  <g transform="translate(168, 2)" fill="#D97706">
+  <g transform="translate(168, 2)" fill="#FACC15">
     <path d="M8 14 L14 14 L16 10 L22 10 L24 8 L30 8 L32 10 L38 10 L40 14 L46 14 L44 16 L38 16 L36 18 L24 18 L22 16 L16 16 Z"/>
     <rect x="12" y="18" width="10" height="5" rx="0.5"/>
-    <path d="M30 8 L34 4 L36 4 L38 8" stroke="#D97706" stroke-width="1.2" fill="none"/>
+    <path d="M30 8 L34 4 L36 4 L38 8" stroke="#FACC15" stroke-width="1.2" fill="none"/>
     <circle cx="18" cy="24" r="2.5"/>
     <circle cx="28" cy="24" r="2.5"/>
     <circle cx="38" cy="24" r="2.5"/>
