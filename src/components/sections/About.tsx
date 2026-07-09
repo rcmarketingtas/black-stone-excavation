@@ -1,16 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
-import { ABOUT_IMAGE } from "@/lib/data";
-
-const highlights = [
-  "10+ years experience",
-  "Fully insured and OH&S compliant",
-  "Licensed operators",
-  "Residential and commercial projects",
-];
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ABOUT_CONTENT, ABOUT_IMAGE } from "@/lib/data";
 
 export function About() {
   return (
@@ -45,26 +40,30 @@ export function About() {
               About Us
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-              Built on Reliability.
+              Family-Owned. Built on Experience.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Blackstone Excavations delivers dependable excavation and earthmoving
-              across Launceston and Tasmania. We show up on time, do the job right,
-              and leave every site clean and ready for the next stage.
+              {ABOUT_CONTENT.paragraphs[0]} {ABOUT_CONTENT.paragraphs[1]}
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              From backyard digs to challenging rock removal, our licensed operators
-              bring modern equipment and attention to detail to every project.
+              {ABOUT_CONTENT.paragraphs[2]}
             </p>
 
             <ul className="mt-8 space-y-3">
-              {highlights.map((item) => (
+              {ABOUT_CONTENT.highlights.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-white/90">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                   {item}
                 </li>
               ))}
             </ul>
+
+            <Button className="mt-8" variant="outline" asChild>
+              <Link href="/about" className="inline-flex items-center gap-2">
+                Read our story
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           </motion.div>
         </div>
       </div>

@@ -2,7 +2,7 @@ export const SITE = {
   name: "Blackstone Excavations",
   tagline: "Precision Excavation. Built on Strength.",
   description:
-    "Professional excavation and earthmoving across Launceston and Tasmania. Licensed operators, modern fleet, reliable service.",
+    "Family-owned excavation and earthmoving across Launceston and Tasmania. General excavation, rock landscaping, backyard makeovers, and more.",
   url: "https://blackstoneexcavation.com.au",
   phone: "1300 555 0198",
   phoneHref: "tel:+6113005550198",
@@ -16,10 +16,11 @@ export const MAPS_EMBED_URL =
   "https://maps.google.com/maps?q=Launceston+Tasmania+Australia&output=embed";
 
 export const NAV_LINKS = [
-  { label: "Home", href: "home" },
-  { label: "Services", href: "services" },
-  { label: "About", href: "about" },
-  { label: "Contact", href: "contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/about" },
+  { label: "Machinery", href: "/machinery" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
 export const SERVICES = [
@@ -74,7 +75,7 @@ export const SERVICES = [
 ] as const;
 
 export const WHY_CHOOSE_US = [
-  { label: "Years Experience", value: 10, suffix: "+", animate: true },
+  { label: "Years Experience", value: 25, suffix: "+", animate: true },
   { label: "Projects Completed", value: 500, suffix: "+", animate: true },
   { label: "Fully Insured", value: 0, suffix: "", animate: false },
   { label: "Licensed Operators", value: 0, suffix: "", animate: false },
@@ -111,7 +112,85 @@ export const REVIEWS = [
 
 export const HERO_IMAGE = "/hero-excavation.webp";
 
-export const ABOUT_IMAGE =
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80";
+export const ABOUT_IMAGE = "/services/general-excavation.webp";
+
+export const ABOUT_CONTENT = {
+  title: "About Us",
+  headline: "Welcome to Blackstone Excavations",
+  paragraphs: [
+    "We are a small family-owned business operating in Launceston and the surrounding areas.",
+    "We are fully licensed, insured, and equipped with all the tools of the trade. We specialise in all types of general excavation, rock landscaping, and backyard makeovers.",
+    "With over 25 years experience, we take pride in everything that we do and love a challenge.",
+  ],
+  cta: "Got a project on the go? Contact us for a free no-obligation quote.",
+  highlights: [
+    "25+ years experience",
+    "Family-owned and local",
+    "Fully licensed and insured",
+    "Fully equipped for any job",
+  ],
+} as const;
+
+export const MACHINERY = [
+  {
+    id: "kobelco-sk55",
+    name: "Kobelco SK55 Excavator",
+    subtitle: "2 units",
+    description:
+      "Compact excavators with rubber tracks and a full range of buckets and attachments for residential and tight-access work.",
+    image: "/machinery/kobelco-sk55.webp",
+    features: [
+      "Rubber tracks",
+      "Tilting quick hitch",
+      "Hydraulic thumb grab",
+      "Full set of buckets (1200, 650, 450, 300mm)",
+      "Ripper tine",
+      "Rock and stick rake",
+    ],
+    attachments: [
+      "Rock breaker",
+      "Auger drive (with 600, 450, 300mm drill bits)",
+    ],
+    capabilities: [] as readonly string[],
+  },
+  {
+    id: "terex-pt50",
+    name: "Terex Posi-track PT50",
+    subtitle: "Posi-track loader",
+    description:
+      "Versatile posi-track for grading, clearing, and material handling across varied terrain.",
+    image: "/machinery/terex-pt50.webp",
+    features: [
+      "Rubber tracks",
+      "4-in-1 bucket",
+      "Smudge bar",
+      "Pallet forks",
+      "Slasher attachment",
+    ],
+    attachments: [] as readonly string[],
+    capabilities: [] as readonly string[],
+  },
+  {
+    id: "tipper-truck",
+    name: "6 Yard Tipper Truck",
+    subtitle: "6.3 tonne payload",
+    description:
+      "Reliable tipper for carting machinery, materials, and supporting driveway and site work.",
+    image: "/machinery/tipper-truck.webp",
+    features: [
+      "UHF 2-way radio",
+      "Handy 4.7m tipping body",
+      "3-way tailgate",
+      "Flashing light",
+    ],
+    attachments: [] as readonly string[],
+    capabilities: [
+      "Carting machinery",
+      "Relocating fill and concrete",
+      "Assisting with gravel driveway construction",
+      "Moving any materials needed",
+    ],
+  },
+] as const;
 
 export const SERVICE_OPTIONS = SERVICES.map((s) => s.title);

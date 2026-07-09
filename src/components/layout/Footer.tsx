@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "@/components/shared/Logo";
 import { NAV_LINKS, SERVICES, SITE } from "@/lib/data";
@@ -10,9 +11,11 @@ export function Footer() {
       <div className="container-wide section-padding mx-auto !py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Logo size="md" />
+            <Link href="/" aria-label={`${SITE.name} home`}>
+              <Logo size="md" />
+            </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Professional excavation and earthmoving across Launceston and Tasmania.
+              Family-owned excavation and earthmoving across Launceston and Tasmania.
               Licensed, insured, and built on reliability.
             </p>
             <div className="mt-6 flex gap-3">
@@ -40,12 +43,12 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={`#${link.href}`}
+                  <Link
+                    href={link.href}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -58,12 +61,12 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               {SERVICES.slice(0, 6).map((service) => (
                 <li key={service.title}>
-                  <a
-                    href="#services"
+                  <Link
+                    href="/#services"
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {service.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

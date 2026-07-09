@@ -11,3 +11,13 @@ export function scrollToSection(id: string) {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+
+export function getHashFromHref(href: string): string | null {
+  const hashIndex = href.indexOf("#");
+  if (hashIndex === -1) return null;
+  return href.slice(hashIndex + 1);
+}
+
+export function isHomeHashLink(href: string): boolean {
+  return href.startsWith("/#") || href.startsWith("#");
+}
