@@ -217,6 +217,54 @@ export const GALLERY_CATEGORIES: GalleryCategory[] = [
 
 export const GALLERY_IMAGES = [
   {
+    src: "/gallery/raised-garden-beds.webp",
+    alt: "Raised corrugated garden beds installed on gravel with excavator on site",
+    category: "Landscaping" as GalleryCategory,
+    height: 360,
+  },
+  {
+    src: "/gallery/backyard-rock-landscaping.webp",
+    alt: "Backyard rock landscaping with fire pit, tiered rock garden, and lawn",
+    category: "Landscaping" as GalleryCategory,
+    height: 400,
+  },
+  {
+    src: "/gallery/stone-steps-retaining-wall.webp",
+    alt: "Sandstone steps and tiered retaining walls with fresh mulch and plantings",
+    category: "Landscaping" as GalleryCategory,
+    height: 420,
+  },
+  {
+    src: "/gallery/stone-steps-landscaping-progress.webp",
+    alt: "Sandstone steps and terraced landscaping under construction with excavator on site",
+    category: "Landscaping" as GalleryCategory,
+    height: 400,
+  },
+  {
+    src: "/gallery/rural-property-driveway.webp",
+    alt: "Rural property driveway and site preparation with excavator on cleared ground",
+    category: "Earthmoving" as GalleryCategory,
+    height: 360,
+  },
+  {
+    src: "/gallery/kobelco-site-prep.webp",
+    alt: "Kobelco excavator on cleared backyard site ready for landscaping",
+    category: "Excavation" as GalleryCategory,
+    height: 340,
+  },
+  {
+    src: "/gallery/blackstone-backyard-excavation.webp",
+    alt: "Blackstone Excavations excavator clearing a backyard site",
+    category: "Excavation" as GalleryCategory,
+    height: 360,
+  },
+  {
+    src: "/gallery/terex-pt50-graded-site.webp",
+    alt: "Terex Posi-track PT50 on freshly graded site",
+    category: "Machinery" as GalleryCategory,
+    height: 340,
+  },
+  {
     src: "/services/general-excavation.webp",
     alt: "General excavation on a residential build site",
     category: "Excavation" as GalleryCategory,
