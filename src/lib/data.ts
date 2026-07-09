@@ -20,6 +20,7 @@ export const NAV_LINKS = [
   { label: "Services", href: "/#services" },
   { label: "About", href: "/about" },
   { label: "Machinery", href: "/machinery" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/#contact" },
 ] as const;
 
@@ -192,6 +193,100 @@ export const MACHINERY = [
       "Assisting with gravel driveway construction",
       "Moving any materials needed",
     ],
+  },
+] as const;
+
+export type GalleryCategory =
+  | "All"
+  | "Excavation"
+  | "Earthmoving"
+  | "Site Cuts"
+  | "Rock Removal"
+  | "Landscaping"
+  | "Machinery";
+
+export const GALLERY_CATEGORIES: GalleryCategory[] = [
+  "All",
+  "Excavation",
+  "Earthmoving",
+  "Site Cuts",
+  "Rock Removal",
+  "Landscaping",
+  "Machinery",
+];
+
+export const GALLERY_IMAGES = [
+  {
+    src: "/services/general-excavation.webp",
+    alt: "General excavation on a residential build site",
+    category: "Excavation" as GalleryCategory,
+    height: 320,
+  },
+  {
+    src: "/services/site-cuts.webp",
+    alt: "Precision site cut and benching work",
+    category: "Site Cuts" as GalleryCategory,
+    height: 360,
+  },
+  {
+    src: "/services/earthmoving.webp",
+    alt: "Bulk earthmoving and soil relocation",
+    category: "Earthmoving" as GalleryCategory,
+    height: 300,
+  },
+  {
+    src: "/services/rock-removal.webp",
+    alt: "Rock breaking and removal on challenging terrain",
+    category: "Rock Removal" as GalleryCategory,
+    height: 340,
+  },
+  {
+    src: "/services/trenching.webp",
+    alt: "Utility trenching for plumbing and electrical",
+    category: "Excavation" as GalleryCategory,
+    height: 280,
+  },
+  {
+    src: "/services/drainage.webp",
+    alt: "Stormwater and property drainage installation",
+    category: "Excavation" as GalleryCategory,
+    height: 300,
+  },
+  {
+    src: "/services/land-clearing.webp",
+    alt: "Land clearing and site preparation",
+    category: "Earthmoving" as GalleryCategory,
+    height: 320,
+  },
+  {
+    src: "/services/driveway-preparation.webp",
+    alt: "Driveway grading and base preparation",
+    category: "Site Cuts" as GalleryCategory,
+    height: 340,
+  },
+  {
+    src: "/about/owner.webp",
+    alt: "Rock landscaping and backyard makeover project",
+    category: "Landscaping" as GalleryCategory,
+    height: 400,
+  },
+  {
+    src: "/machinery/kobelco-sk55.webp",
+    alt: "Kobelco SK55 excavator on site",
+    category: "Machinery" as GalleryCategory,
+    height: 320,
+  },
+  {
+    src: "/machinery/terex-pt50.webp",
+    alt: "Terex Posi-track PT50 at work",
+    category: "Machinery" as GalleryCategory,
+    height: 300,
+  },
+  {
+    src: "/hero-excavation.webp",
+    alt: "Excavator at work on a Tasmanian construction site",
+    category: "Excavation" as GalleryCategory,
+    height: 360,
   },
 ] as const;
 
