@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ABOUT_CONTENT, ABOUT_IMAGE } from "@/lib/data";
+import { ABOUT_CONTENT, ABOUT_IMAGE, ABOUT_IMAGE_ALT } from "@/lib/data";
 
 export function About() {
   return (
@@ -18,13 +18,13 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="relative aspect-[4/3] overflow-hidden rounded-2xl"
+            className="relative aspect-[4/5] overflow-hidden rounded-2xl"
           >
             <Image
               src={ABOUT_IMAGE}
-              alt="Blackstone Excavations machinery on site"
+              alt={ABOUT_IMAGE_ALT}
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />

@@ -112,7 +112,9 @@ export const REVIEWS = [
 
 export const HERO_IMAGE = "/hero-excavation.webp";
 
-export const ABOUT_IMAGE = "/services/general-excavation.webp";
+export const ABOUT_IMAGE = "/about/owner.webp";
+export const ABOUT_IMAGE_ALT =
+  "The owner of Blackstone Excavations smiling outdoors with his dog, wearing a branded company shirt.";
 
 export const ABOUT_CONTENT = {
   title: "About Us",
